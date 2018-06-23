@@ -1,3 +1,6 @@
+/*
+@import "~font-awesome/scss/font-awesome";
+*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6282,6 +6285,19 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
 #main-menu .navbar-brand img {
   height: 110px; }
 
@@ -6310,17 +6326,114 @@ a.text-dark:hover, a.text-dark:focus {
     content: ""; }
 
 #filters {
-  margin-top: 42px; }
-  #filters .filter-buttons .form-group {
-    float: left;
-    margin-left: 14px; }
-    #filters .filter-buttons .form-group select {
+  margin-bottom: 50px; }
+  #filters select {
+    outline: none; }
+    #filters select:focus {
       outline: none; }
-    #filters .filter-buttons .form-group button {
-      background: #ec7a00; }
-    #filters .filter-buttons .form-group .button-arrow {
-      color: #fff;
-      background: #d0730c; }
+  #filters .filter-buttons .form-group {
+    margin-bottom: 0; }
 
 .filter-title {
+  margin-top: 42px;
+  color: #0059a3;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 32px; }
+
+.btn-orange {
+  color: #fff;
+  background: #ec7a00; }
+  .btn-orange:before {
+    font: normal normal normal 14px/1 FontAwesome; }
+
+.filter-button-title {
+  margin-top: 32px;
+  margin-bottom: 32px;
   color: #0059a3; }
+
+.house-section {
+  padding-top: 38px;
+  box-shadow: inset 0 6px 9px -7px rgba(0, 0, 0, 0.3); }
+
+.blue-square {
+  margin-top: 40px;
+  z-index: 2;
+  position: relative;
+  width: 430px;
+  height: 340px;
+  background: #0059a3;
+  padding: 60px;
+  -ms-transform: rotate(-7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-7deg);
+  /* Safari */
+  transform: rotate(-7deg);
+  /* Standard syntax */ }
+  .blue-square .blue-square-content {
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Safari */
+    transform: rotate(7deg);
+    /* Standard syntax */
+    color: #fff; }
+    .blue-square .blue-square-content h4 {
+      margin-bottom: 26px;
+      font-size: 2.6rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+.house-image-wrapper {
+  margin-left: -30px; }
+
+.article-body {
+  margin-bottom: 34px; }
+
+.house-description {
+  margin-left: 130px; }
+
+.read-more {
+  color: #fff;
+  text-decoration: underline;
+  line-height: 12px; }
+
+.description-list {
+  margin: 0;
+  padding: 0; }
+  .description-list li {
+    list-style-type: none; }
+    .description-list li .main-text {
+      font-weight: bold;
+      font-size: 24px; }
+    .description-list li .sub-text {
+      margin-right: 32px; }
+    .description-list li i {
+      margin-right: 16px; }
+
+.middle-blue {
+  height: 328px;
+  background: #0059a3;
+  overflow: hidden;
+  margin-top: 50px; }
+
+.light-blue-block {
+  background: #005dab;
+  height: 300px;
+  -ms-transform: rotate(-8deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-8deg);
+  /* Safari */
+  transform: rotate(-8deg);
+  /* Standard syntax */ }
+
+.not-rotate-content {
+  -ms-transform: rotate(8deg);
+  /* IE 9 */
+  -webkit-transform: rotate(8deg);
+  /* Safari */
+  transform: rotate(8deg);
+  /* Standard syntax */ }
+
+#top-menu {
+  font-family: gotham; }

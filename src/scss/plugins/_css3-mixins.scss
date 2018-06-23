@@ -257,6 +257,14 @@
   -ms-filter:        "FlipH";
 }
 
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+  -moz-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
 
 /// Font Face
 /// @param {Font} $fontFamily [myFont] - Font Family

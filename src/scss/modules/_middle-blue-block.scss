@@ -1,0 +1,22 @@
+.middle-blue{
+  height: 328px;
+  background: $mainBlue;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.light-blue-block{
+  background: $lightBlue;
+  height: 300px;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg); /* Standard syntax */
+}
+.not-rotate-content{
+  -ms-transform: rotate(8deg); /* IE 9 */
+  -webkit-transform: rotate(8deg); /* Safari */
+  transform: rotate(8deg); /* Standard syntax */
+}
+
+
+
