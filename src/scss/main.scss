@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import "partials/colors";
+@import "modules/main-menu";
+@import "modules/top-menu";
+@import "modules/main-slider";
+@import "modules/_filters.scss";
 
-body{
-
-}

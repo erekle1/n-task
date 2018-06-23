@@ -5,17 +5,145 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="dist/main.bundle.css">
+
     <title>Document</title>
 </head>
 <body>
 <div class="container">
+
+   <!-- start top menu -->
+
+    <div class="row" id="top-menu">
+        <ul class="float-right">
+            <li><a href="#">Blog</a> </li>
+            <li><a href="#">Over ons</a> </li>
+            <li><a href="#">Contact</a> </li>
+        </ul>
+    </div>
+
+    <!-- end top menu-->
+
+
+    <!--start main menu-->
     <div class="row">
-        <div class="col-2">
-            dsdfs
+        <nav class="navbar navbar-expand-lg " id="main-menu">
+            <!--<a class="navbar-brand" href="#"><img src="assets/images/logo.png"> </a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a  class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="#" >Aanbod <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nleuwbouw</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Verkoopmakelaar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aankoopmakelaar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Diensten</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!--end main menu-->
+
+
+
+</div>
+
+<!--start main slider-->
+<div id="main-slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block img-fluid w-100" src="assets/images/main_slider/slide1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block img-fluid w-100" src="assets/images/main_slider/slide2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block img-fluid w-100" src="assets/images/main_slider/slide3.png" alt="Third slide">
         </div>
     </div>
 </div>
+<!--end main slider-->
+
+<!--start filters-->
+<div id="filters">
+    <div class="d-flex justify-content-center text-center filter-title">
+        <span class="font-weight-bold">
+             UW plaatselijke makelaar in westland,<br>
+        haaglanden en vlaardingen<br>
+
+            Vind uw woning:
+        </span>
+    </div>
+
+    <div class="filter-buttons">
+        <div class="d-flex justify-content-center">
+            <form action="#">
+                <div class="form-group">
+                    <select title="Alle plaasten" class="form-control">
+                        <option>Alle Plaasten</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select title="Alle type woningen" class="form-control">
+                        <option>Alle type woningen</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select title="Alle plaasten" class="form-control">
+                        <option>Alle prijzen</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                 <svg id="i-arrow-right" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </span>
+                        </div>
+                        <button class="btn">Zoek Woningen</button>
+                    </div>
+
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end filters-->
 
 <script src="dist/bundle.js"></script>
 </body>

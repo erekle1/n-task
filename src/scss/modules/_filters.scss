@@ -1,0 +1,24 @@
+#filters{
+ margin-top:42px;
+
+  .filter-buttons{
+    .form-group{
+      float: left;
+      margin-left:14px;
+      select{
+        outline: none;
+      }
+      button{
+        background: $filterButtonBg;
+      }
+     .button-arrow{
+          color: #fff;
+          background: $buttonArrowBg;
+        }
+    }
+  }
+}
+.filter-title{
+  color: $mainBlue;
+}
+
