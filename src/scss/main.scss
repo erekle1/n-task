@@ -1,18 +1,6 @@
-/*
-@import "~font-awesome/scss/font-awesome";
-*/
 @import "~bootstrap/scss/bootstrap";
-@import "plugins/css3-mixins";
 @import "partials/colors";
-@import "modules/main-menu";
-@import "modules/top-menu";
-@import "modules/main-slider";
-@import "modules/filters.scss";
-@import "modules/house-section";
-@import "modules/middle-blue-block";
-
-#top-menu{
-  font-family: gotham;
-}
-
+@import "modules/holandia.scss";
+@import "modules/house-section.scss";
+@import "modules/responsive.scss";
 

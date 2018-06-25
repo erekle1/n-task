@@ -1,41 +1,24 @@
 #filters{
-  margin-bottom: 50px;
+ margin-top:42px;
 
-  select{
-    outline: none;
-
-    &:focus{
-      outline:none;
-    }
-  }
-  .filter-buttons {
+  .filter-buttons{
     .form-group{
-      margin-bottom: 0;
-      //margin-left: 14px;
-      //padding: 0;
+      float: left;
+      margin-left:14px;
+      select{
+        outline: none;
+      }
+      button{
+        background: $filterButtonBg;
+      }
+     .button-arrow{
+          color: #fff;
+          background: $buttonArrowBg;
+        }
     }
   }
 }
 .filter-title{
-  margin-top:42px;
-  color: $mainBlue;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 32px;
-}
-
-.btn-orange{
-  color:#fff;
-  background: $filterButtonBg;
-  &:before{
-   // content: "\f30b";
-    font: normal normal normal 14px/1 FontAwesome;
-  }
-}
-
-.filter-button-title{
-  margin-top:32px;
-  margin-bottom:32px;
   color: $mainBlue;
 }
 
