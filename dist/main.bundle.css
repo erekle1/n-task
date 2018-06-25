@@ -6564,12 +6564,13 @@ button.btn {
   width: 100%; }
 
 .link-verkopen {
+  text-transform: uppercase;
   text-align: center;
   background: #013c70;
   width: 150px;
   padding: 15px 25px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   display: block;
   color: #fff;
