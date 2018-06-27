@@ -46,7 +46,6 @@ ol, ul {
 a, a:hover {
   text-decoration: none;
   list-style-type: none;
-  font-family: canaro;
 }
 
 blockquote, q {
@@ -64,11 +63,6 @@ table {
   border-spacing: 0;
 }
 
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
 /* header */
 header {
   -webkit-box-shadow: 0 2px 4px rgba(57, 63, 72, 0.2);
@@ -78,9 +72,19 @@ header {
   z-index: 1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, p, span, select, option, .form-control {
+  color: $brown;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
 .logo_img {
   position: absolute;
-  top: 14px;
+  top: 18px;
   z-index: 1;
 }
 
@@ -92,33 +96,12 @@ header {
   height: 110px;
 }
 
-/*tom memu*/
-.right-top-menu ul {
-  display: flex;
-  justify-content: flex-end;
-  line-height: 32px;
-}
-
-.right-top-menu ul li {
-  margin-left: 25px;
-}
-
-.right-top-menu ul li a {
-  color: #717171;
-  font-size: 14px;
-}
-
 /* navigation */
 
 .navbar-nav {
   display: flex;
   flex-direction: unset;
   justify-content: flex-end;
-}
-
-.navbar {
-  padding: 16px 0 30px 0;
-  margin-bottom: 0;
 }
 
 .navbar-default {
@@ -165,51 +148,11 @@ header {
   font-family: canaro;
 }
 
-.dropdown-toggle::after {
-  margin-left: 5px;
-  vertical-align: 0.15em;
-  font-size: 22px;
-  color: #333;
-}
-
-.dropdown-menu > li:last-child {
-  border: 0px;
-}
-
 /* filters */
 .filters {
   -webkit-box-shadow: 0 2px 4px rgba(57, 63, 72, 0.2);
   -moz-box-shadow: 0 2px 4px rgba(57, 63, 72, 0.2);
   box-shadow: 0 2px 4px rgba(57, 63, 72, 0.2);
-}
-
-.filters .text-center {
-  padding-top: 45px;
-  padding-bottom: 30px;
-}
-
-.filters .font-weight-bold {
-  display: block;
-  margin: auto;
-  font-size: 26px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-  color: #025aa4;
-}
-
-.filters p {
-  width: 100%;
-  color: #333;
-}
-
-.filters .filters-form {
-  padding-bottom: 50px;
-}
-
-.filters .form-group {
-  margin-bottom: 0px;
-  margin-left: 12px;
 }
 
 .input-group-text {
@@ -497,6 +440,3 @@ form {
   color: #efefef;
 }
 
-#main-slider {
-  max-height: 330px;
-}

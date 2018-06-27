@@ -1,13 +1,51 @@
 #top-menu {
+  margin-top: 8px;
   ul {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 32px;
     li {
-      list-style-type: none;
-      float: left;
-      display: block;
-      margin-left: 26px;
+      margin-left: 25px;
       a {
+        position: relative;
+        display: block;
+        cursor: pointer;
         color: $gray;
+        font-size: 16px;
+        font-family: 'Fira Sans', sans-serif;
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          top: 50%;
+          margin-top: -0.5px;
+          background: $gray;
+        }
+
+        &:before {
+          left: -2.5px;
+        }
+        &:after {
+          right: 2.5px;
+          background: $gray;
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        &:hover:before {
+          background: $gray;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        &:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
       }
     }
   }
 }
+
+

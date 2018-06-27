@@ -1,20 +1,38 @@
 
-
 #main-menu {
-
-  .bg-light {
-    //background-color: #fff;
-  }
-
-  .navbar-brand {
-    img {
-      height: 110px;
+  padding: 24px 0 30px 0;
+  margin-bottom: 0;
+  & > div {
+    & > ul {
+      & > li {
+        & > a {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          &:hover {
+            color: $activeMenuColor;
+            @include transition(color 800ms linear);
+          }
+        }
+      }
     }
   }
 
-  .nav-link{
-    font-weight: 600;
-    color: $mainBlue;
+  .dropdown-toggle {
+    &:after {
+      margin-left: 5px;
+      vertical-align: 0.15em;
+      font-size: 16px;
+      color: #333;
+
+    }
+    & > {
+      li {
+        &:last-child {
+          border: 0;
+        }
+      }
+    }
   }
 
 }

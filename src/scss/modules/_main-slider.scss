@@ -1,18 +1,10 @@
 #main-slider{
-  height: 334px;
-  overflow: hidden;
-  //box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
-
-
-
-
-  .carousel-item:before {
-    box-shadow: inset 0 6px 9px -7px rgba(0,0,0,0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
+  height: 332px;
+  .carousel-inner {
+    &>.item{
+       &>img{
+          width: 100%;
+      }
+    }
   }
 }

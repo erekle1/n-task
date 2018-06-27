@@ -1,52 +1,27 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/js/app.js', './src/scss/main.scss'],
+    entry: ['./src/js/app.js','./src/scss/main.scss'],
     output: {
-        filename: 'dist/bundle.js'
+        path: __dirname + '/dist',
+        filename: 'build.js',
     },
     module: {
-        rules: [
-            /*
-            your other rules for JavaScript transpiling go in here
-            */
-            { // css / sass / scss loader for webpack
-                test: /\.(css|sass|scss)$/,
-                use: ExtractTextPlugin.extract({
-                    use: ['css-loader', 'sass-loader'],
-                }),
-
-            },
-            {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                use: [
-                    'url-loader?limit=10000',
-                    'img-loader'
-                ]
-            }
-
-        ],
         loaders: [
             {
                 test: /\.scss$/,
                 loader: 'style-loader!css-loader!sass-loader'
             },
             {
-                test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        outputPath: 'fonts/'
+                        outputPath: 'dist/fonts/'
                     }
                 }]
             }
         ],
     },
-    plugins: [
-        new ExtractTextPlugin({ // define where to save the file
-            filename: 'dist/[name].bundle.css',
-            allChunks: true,
-        }),
-    ],
+    watch: true,
 };

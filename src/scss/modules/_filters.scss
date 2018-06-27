@@ -1,24 +1,58 @@
-#filters{
- margin-top:42px;
+#filters {
+  margin-top: 36px;
+  .filter-title {
+    h2 {
+      display: block;
+      margin: auto;
+      font-size: 34px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #025aa4;
+      font-family: 'Montserrat', sans-serif;
+    }
+    p {
+      margin-top: 24px;
+      width: 100%;
+      color: $mainBlue;
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 30px;
+    }
+  }
 
-  .filter-buttons{
-    .form-group{
-      float: left;
-      margin-left:14px;
-      select{
-        outline: none;
-      }
-      button{
-        background: $filterButtonBg;
-      }
-     .button-arrow{
-          color: #fff;
-          background: $buttonArrowBg;
+  .filters-form {
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    .form-group {
+      margin-bottom: 0px;
+      margin-left: 12px;
+    }
+    .twin-selects {
+      select {
+        width: 50%;
+        float: left;
+        &:first-child {
+          @include border-right-radius(0);
         }
+        &:last-child {
+          @include border-left-radius(0);
+          border-left: 0;
+        }
+      }
+    }
+    select{
+      height: 50px;
+    }
+    button{
+      font-size: 16px;
+      font-family: 'Montserrat',sans-serif;
+      font-weight: 600;
+      padding: 12px;
     }
   }
 }
-.filter-title{
-  color: $mainBlue;
-}
+
 

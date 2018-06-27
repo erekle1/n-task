@@ -1,6 +1,27 @@
+/*
+  start Plugins
+*/
 @import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+@import "plugins/css3-mixins";
+/*
+  end plugins
+*/
+
+@import "partials/fonts";
 @import "partials/colors";
+
 @import "modules/holandia.scss";
+@import "modules/main-menu";
+@import "modules/top-menu";
+@import "modules/main-slider";
+@import "modules/filters";
 @import "modules/house-section.scss";
 @import "modules/responsive.scss";
 
+select.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
