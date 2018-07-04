@@ -19,7 +19,8 @@
   "homepage": "https://github.com/erekle1/n-task#readme",
   "devDependencies": {
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11"
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.3.1"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",

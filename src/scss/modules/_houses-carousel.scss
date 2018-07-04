@@ -1,0 +1,71 @@
+#houses-carousel {
+  margin-top: 76px;
+  padding-top: 56px;
+  padding-bottom: 64px;
+  background: #e7e7e7;
+  h3 {
+    color: $mainBlue;
+    font-size: 34px;
+    margin: 0 0 56px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .owl-carousel {
+    .item {
+      position: relative;
+      background: #fff;
+      .funda-label {
+        position: absolute;
+        top: -8px;
+        left: -10px;
+        width: 90px;
+        height: 90px;
+        @include border-radius(50%);
+        background: $mainBlue;
+        img {
+          width: auto;
+          left: 14px;
+          top: 6px;
+          position: relative;
+        }
+        span {
+          display: block;
+          width: 100%;
+          font-weight: bold;
+          margin-top: 26px;
+          position: relative;
+          font-size: 10px;
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          color: #fff;
+        }
+      }
+      .carousel-link {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: $mainBlue;
+        display: block;
+        width: 100%;
+        margin-bottom: 32px;
+        &:before {
+
+        }
+      }
+      .carousel-price {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .desc-container {
+        padding: 46px 28px;
+      }
+    }
+    .owl-stage-outer {
+      overflow: visible;
+    }
+  }
+}
+
